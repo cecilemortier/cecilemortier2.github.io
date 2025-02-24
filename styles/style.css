@@ -98,8 +98,8 @@ body {
 	.sidebar {
 		flex: none;
 		height: auto;
-		min-height: 15vh;
-		padding: 4vh;
+		/*min-height: 20vh;*/
+		padding: 2vh;
 		border-right: none;
 		border-bottom: 2px solid rgba(0,0,0,0.1);
 
@@ -119,12 +119,12 @@ body {
 
 	.sidebar h1 {
 		font-size: min(8vh, 5vw);
-		margin-bottom: 2vh;
+		margin-bottom: 1.5vh;
 	}
 	
 	.sidebar p {
 		font-size: min(5vh, 2.5vw);
-		margin-bottom: 1.5vh;
+		margin-bottom: 1vh;
 		line-height: 1.4;
 	}
 
