@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
     const slideInterval = 6000; // Change slide every 3 seconds
 
-    // Show first slide initially
-    slides[0].classList.add('active');
-
     function nextSlide() {
         // Remove active class from current slide
         slides[currentSlide].classList.remove('active');
