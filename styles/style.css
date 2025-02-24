@@ -85,13 +85,33 @@ body {
 		flex: none;
 		height: auto;
 		min-height: 40vh;
-		padding: 3vh;
+		padding: 6vh;
 		border-right: none;
 		border-bottom: 2px solid rgba(0,0,0,0.1);
+
+		flex-direction: row;
+		gap: 2vh;
+		align-items: center;
 	}
 
 	.headimage {
 		height: 15vh;
+		margin-bottom: 0;
+	}
+
+	.sidebar-text {
+		flex: 1;
+	}
+
+	.sidebar h1 {
+		font-size: min(8vh, 5vw);
+		margin-bottom: 2vh;
+	}
+	
+	.sidebar p {
+		font-size: min(5vh, 2.5vw);
+		margin-bottom: 1.5vh;
+		line-height: 1.4;
 	}
 
 	.content {
