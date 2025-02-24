@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelector('.carousel').getElementsByTagName('img');
+    const carousel = document.querySelector('.carousel');
+    const slides = carousel.getElementsByTagName('img');
     let currentSlide = 0;
-    const slideInterval = 6000; // Change slide every 3 seconds
+    const slideInterval = 6000; // Change slide every 6 seconds
 
     function nextSlide() {
         // Remove active class from current slide
@@ -13,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add active class to new slide
         slides[currentSlide].classList.add('active');
     }
+
+    // Add touch event listener to carousel
+    carousel.addEventListener('click', function() {
+        nextSlide();
+    });
 
     // Start automatic slideshow
     setInterval(nextSlide, slideInterval);
