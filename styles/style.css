@@ -70,6 +70,20 @@ body {
 	border-radius: 5%;
 }
 
+@media (orientation: landscape) {
+	.carousel-container {
+		display: contents;
+	}
+	
+	.carousel {
+		display: contents;
+	}
+	
+	.carousel-nav {
+		display: none;
+	}
+}
+
 @media screen and (orientation:portrait) {
 	html, body {
 		height: 100vh;
@@ -84,7 +98,7 @@ body {
 	.sidebar {
 		flex: none;
 		height: auto;
-		min-height: 40vh;
+		min-height: 20vh;
 		padding: 6vh;
 		border-right: none;
 		border-bottom: 2px solid rgba(0,0,0,0.1);
@@ -120,5 +134,29 @@ body {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 30vh);
 		padding: 2vh;
+		flex-direction: column;
+	}
+
+	.carousel-container {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caroussel {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.carousel img {
+		position: absolute;
+    	width: 100%;
+    	opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.carousel img.active {
+		opacity: 1;
 	}
 }
