@@ -123,7 +123,7 @@ body {
 	}
 	
 	.sidebar p {
-		font-size: min(7vh, 2.5vw);
+		font-size: min(7vh, 3.5vw);
 		margin-bottom: 1vh;
 		line-height: 1.4;
 	}
