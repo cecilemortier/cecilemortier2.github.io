@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         slides[currentSlide].classList.add('active');
     }
 
-    // Add touch event listener to carousel
-    carousel.addEventListener('click', function() {
-        nextSlide();
+    // Add touch and click event listeners to carousel
+    ['click', 'touchstart'].forEach(function(event) {
+        carousel.addEventListener(event, function(e) {
+            e.preventDefault();
+            nextSlide();
+        });
     });
 
     // Start automatic slideshow
