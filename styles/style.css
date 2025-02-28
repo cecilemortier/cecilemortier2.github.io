@@ -161,7 +161,16 @@ body {
 	}
 }
 
-@media screen and (orientation:portrait), (max-height: 768px) {
+@media screen and (max-height: 768px) {
+	.content {
+		height: auto;
+		min-height: 60vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 30vh);
+		padding: 2vh;
+		flex-direction: column;
+	}
+
 	.carousel-container {
 		width: 100%;
 		position: relative;
