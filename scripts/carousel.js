@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
-    const slides = carousel.getElementsByTagName('img');
+    const slides = carousel.querySelectorAll('.carousel-element');
     let currentSlide = 0;
     const slideInterval = 6000; // Change slide every 6 seconds
 
