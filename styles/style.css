@@ -123,8 +123,10 @@ body {
 
 	html,
 	body {
-		height: 100vh;
-		overflow-y: auto;
+		height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        width: 100%;
 	}
 
 	body {
@@ -166,8 +168,9 @@ body {
 	}
 
 	.content {
+		flex: 1;
 		height: auto;
-		min-height: 60vh;
+		min-height: 0;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 30vh);
 		padding: 2vh;
@@ -178,7 +181,7 @@ body {
         width: 100%;
         position: relative;
         overflow: hidden;
-        height: 30vh; /* Set explicit height to match grid-template-rows */
+        height: 100%;
     }
 
     .carousel {
@@ -201,6 +204,12 @@ body {
     .carousel .carousel-element.active {
         opacity: 1;
     }
+
+	.carousel-element .text-frame p {
+		font-size: min(4vh, 2.6vw);
+		line-height: 1.8;
+		text-align: center;
+	}
 }
 
 @media screen and (max-height: 768px) {
