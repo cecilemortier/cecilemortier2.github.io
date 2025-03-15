@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
     const slides = carousel.querySelectorAll('.carousel-element');
     let currentSlide = 0;
-    const slideInterval = 6000; // Change slide every 6 seconds
+    const slideInterval = 8000; // Change slide every 8 seconds
 
     function nextSlide() {
         // Remove active class from current slide
