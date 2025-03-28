@@ -9,18 +9,6 @@
 	box-sizing: border-box;
 }
 
-body::before {
-	content: "NORMAL MODE ACTIVE - Width: " attr(data-width) "px, Height: " attr(data-height) "px";
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: #338fcc;
-	color: white;
-	z-index: 9999;
-	padding: 5px;
-	font-size: 12px;
-}
-
 html,
 body {
 	height: 100vh;
@@ -135,7 +123,7 @@ body {
 @media screen and (orientation:portrait) {
 
 	body::before {
-        content: "PORTRAIT MODE ACTIVE - Width: " attr(data-width) "px, Height: " attr(data-height) "px";
+        content: "PORTRAIT MODE ACTIVE";
         position: fixed;
         top: 0;
         left: 0;
@@ -237,10 +225,10 @@ body {
 	}
 }
 
-@media screen and (max-height: 768px) and (min-width: 768px) {
+/*@media screen and (max-height: 768px) and (orientation:landscape) and (min-width: 768px) {
 
 	body::before {
-        content: "LANDSCAPE MODE ACTIVE - Width: " attr(data-width) "px, Height: " attr(data-height) "px";
+        content: "LANDSCAPE MODE ACTIVE";
         position: fixed;
         top: 0;
         left: 0;
@@ -253,7 +241,7 @@ body {
 
 	.content {
 		height: 100%;
-		/* Ensure the grid has a fixed height */
+
 		padding: 2vh;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
@@ -290,13 +278,13 @@ body {
 		opacity: 1;
 	}
 
-	/* Ensure the iframe occupies the second grid cell */
+
 	iframe {
 		grid-column: 2;
 		width: 100%;
 		height: 100%;
 	}
-}
+}*/
 
 /* Main page only */
 
