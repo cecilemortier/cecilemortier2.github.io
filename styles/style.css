@@ -120,15 +120,15 @@ body {
 	}
 }
 
-@media	only screen and (hover: none) and (pointer: coarse), 
-		only screen and (max-width: 900px) {
+@media only screen and (hover: none) and (pointer: coarse), 
+	   only screen and (max-width: 720px) {
 
 	html,
 	body {
 		height: 100%;
-        overflow-y: auto;
-        position: fixed;
-        width: 100%;
+		overflow-y: auto;
+		position: fixed;
+		width: 100%;
 	}
 
 	body {
