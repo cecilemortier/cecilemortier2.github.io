@@ -205,7 +205,7 @@ body {
 	}
 }
 
-@media screen and (max-height: 900px) and (orientation:landscape) and (min-width: 768px) {
+@media screen and (max-height: 768px) and (orientation:landscape) and (min-width: 600px) {
 
 	.content {
 		height: 100%;
