@@ -77,14 +77,6 @@ body {
 }
 
 .carousel-element .text-frame {
-	/*position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
-	padding: 1vh;*/
-
 	position: relative;
 	border-radius: 5%;
 	width: 100%;
@@ -121,18 +113,6 @@ body {
 }
 
 @media screen and (orientation:portrait) {
-
-	body::before {
-        content: "PORTRAIT MODE ACTIVE";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #ff3366;
-        color: white;
-        z-index: 9999;
-        padding: 5px;
-        font-size: 12px;
-    }
 
 	html,
 	body {
@@ -225,23 +205,11 @@ body {
 	}
 }
 
-/*@media screen and (max-height: 768px) and (orientation:landscape) and (min-width: 768px) {
-
-	body::before {
-        content: "LANDSCAPE MODE ACTIVE";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #33cc66;
-        color: white;
-        z-index: 9999;
-        padding: 5px;
-        font-size: 12px;
-    }
+@media screen and (max-height: 768px) and (orientation:landscape) and (min-width: 768px) {
 
 	.content {
 		height: 100%;
-
+		/* Ensure the grid has a fixed height */
 		padding: 2vh;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
@@ -278,13 +246,13 @@ body {
 		opacity: 1;
 	}
 
-
+	/* Ensure the iframe occupies the second grid cell */
 	iframe {
 		grid-column: 2;
 		width: 100%;
 		height: 100%;
 	}
-}*/
+}
 
 /* Main page only */
 
