@@ -323,4 +323,10 @@ body {
         width: 100%;
         max-width: 280px;
     }
+
+	.cta-button {
+		font-size: 14px;
+		padding: 8px 12px;
+		margin-top: 10px;
+	}
 }
